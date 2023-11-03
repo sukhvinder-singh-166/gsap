@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./gsap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div> -->
@@ -17,6 +23,33 @@
     <!-- ----------scroll-------- -->
     <div class="bigBox"><div class="smallBox"></div></div>
     <div class="bigBox"><div class="smallBox2"></div></div>
+    <div class="container min-vh-100 d-flex align-content-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6">
+          <div class="text-center text-md-start" id="heading">
+            <h2 class="text-2xl text-lg text-5xl font-medium">
+              Let Your Customer Experience Shine
+            </h2>
+            <p class="text-sm text-base pt-3 text-dark">
+              Automated client rating, provides instant feedback on client
+              booking history, partner this with your own Loyalty program.
+            </p>
+            <button class="mt-5 mt-lg-30px btn btn-primary">Free Trial</button>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="position-relative">
+            <img
+              src="https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-596.jpg?size=626&ext=jpg"
+              alt="customer big image"
+              class="w-100"
+              id="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="bigBox"><div class="smallBox3"></div></div>
     <!-- gsap cdn -->
     <script
@@ -31,6 +64,12 @@
       integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
     ></script>
     <!-- link js -->
     <script src="./gsap.js"></script>

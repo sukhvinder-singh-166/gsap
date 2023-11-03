@@ -38,6 +38,14 @@ gsap.from(".bigBox .smallBox", {
   scale: 1.5,
   borderRadius: 50,
   backgroundColor: "green",
+  scrollTrigger: {
+    trigger: ".bigBox .smallBox",
+    scroller: "body",
+    // markers: true,
+    start: "top 90%",
+    end: "bottom -20%",
+    scrub: true,
+  },
 });
 gsap.from(".bigBox .smallBox2", {
   rotate: 360,
@@ -49,7 +57,7 @@ gsap.from(".bigBox .smallBox2", {
   scrollTrigger: {
     trigger: ".bigBox .smallBox2",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 60%",
     end: "top 20%",
     scrub: true,
@@ -61,5 +69,42 @@ gsap.from(".bigBox .smallBox3", {
   scale: 1.5,
   borderRadius: 50,
   backgroundColor: "black",
-  scrollTrigger: ".bigBox .smallBox3",
+  scrollTrigger: {
+    trigger: ".bigBox .smallBox3",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "bottom 20%",
+    scrub: true,
+  },
+});
+
+gsap.from(".container #image", {
+  x: 600,
+  //   duration: 5,
+  scale: 1.2,
+  backgroundColor: "red",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".container #image",
+    scroller: "body",
+    // markers: true,
+    start: "bottom 120%",
+    end: "bottom 40%",
+    scrub: true,
+  },
+});
+gsap.from(".container #heading", {
+  x: -600,
+  //   duration: 5,
+  scale: 1.2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".container #heading",
+    scroller: "body",
+    // markers: true,
+    start: "bottom 120%",
+    end: "bottom 40%",
+    scrub: true,
+  },
 });
